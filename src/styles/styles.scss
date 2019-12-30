@@ -11,6 +11,8 @@ html,
 body {
   font-family: $font;
   font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -133,5 +135,46 @@ header {
     text-transform: uppercase;
     position: absolute;
     bottom: 48px;
+  }
+}
+
+//About
+.about-bio {
+  padding: 100px 0 50px 0;
+  background: $off-white;
+  position: relative;
+  .inner-bio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .content {
+      width: 33%;
+      @media (max-width: 1440px) {
+        width: 40%;
+      }
+      h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+        margin: 0;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 300;
+        margin: 40px 0 72px;
+      }
+      .btn-row {
+        a {
+          font-weight: 700;
+          font-size: 1rem;
+          letter-spacing: 1.5px;
+          color: $black;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
