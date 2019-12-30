@@ -99,31 +99,10 @@ header {
       }
     }
     .main-image {
-      width: 536px;
+      width: 700px;
       margin: 0 auto;
       @media (max-width: 1440px) {
         width: 436px;
-      }
-    }
-    .side-image {
-      width: 260px;
-      position: absolute;
-      @media (max-width: 1440px) {
-        width: 208px;
-      }
-      &.left {
-        left: 168px;
-        top: 12px;
-        @media (max-width: 1440px) {
-          left: 128px;
-        }
-      }
-      &.right {
-        right: 168px;
-        bottom: 12px;
-        @media (max-width: 1440px) {
-          right: 128px;
-        }
       }
     }
   }
@@ -143,38 +122,154 @@ header {
   padding: 100px 0 50px 0;
   background: $off-white;
   position: relative;
-  .inner-bio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .content {
-      width: 33%;
-      @media (max-width: 1440px) {
-        width: 40%;
+  .container {
+    .inner-bio {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .content {
+        width: 50%;
+        @media (max-width: 1440px) {
+          width: 40%;
+        }
+        h3 {
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 1.8rem;
+          letter-spacing: 1.5px;
+          margin: 0;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 2rem;
+          font-weight: 300;
+          margin: 40px 0 72px;
+        }
+        .logos {
+          display: flex;
+          .dctf-image {
+            width: 15%;
+            padding-bottom: 15px;
+            padding-right: 25px;
+          }
+          .aca-image {
+            width: 15%;
+            padding-bottom: 15px;
+          }
+        }
+
+        .btn-row {
+          a {
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 1.5px;
+            color: $black;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+        }
       }
-      h3 {
+    }
+    .bio-image {
+      width: 30%;
+      margin-right: 35px;
+      right: 168px;
+      @media (max-width: 1440px) {
+        width: 436px;
+      }
+    }
+  }
+}
+
+//Projects
+.outter-project {
+  width: 100%;
+  padding: 100px 0 50px 0;
+  background: $white;
+  .inner-project {
+    .heading {
+      h2 {
         font-weight: 700;
         text-transform: uppercase;
         font-size: 1.8rem;
         letter-spacing: 1.5px;
         margin: 0;
       }
-      p {
-        font-size: 1rem;
-        line-height: 2rem;
-        font-weight: 300;
-        margin: 40px 0 72px;
-      }
-      .btn-row {
-        a {
-          font-weight: 700;
-          font-size: 1rem;
-          letter-spacing: 1.5px;
-          color: $black;
-          text-transform: uppercase;
-          text-decoration: none;
+    }
+    .project-list {
+      .project {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 0;
+        .project-title {
+          width: 55%;
+          h3 {
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 1.5px;
+            color: $black;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 2rem;
+            font-weight: 300;
+            margin: 40px 0 72px;
+          }
+        }
+        .side-image {
+          width: 40%;
+          padding: 0 20px;
+          @media (max-width: 1440px) {
+            width: 208px;
+          }
+
+          &.top {
+            @media (max-width: 1440px) {
+              left: 128px;
+            }
+          }
+          &.mid {
+            @media (max-width: 1440px) {
+              right: 128px;
+            }
+          }
+          &.bottom {
+            @media (max-width: 1440px) {
+              right: 128px;
+            }
+          }
+        }
+        &.top {
+          flex-direction: row-reverse;
+          background: $teal;
+        }
+        &.bottom {
+          flex-direction: row-reverse;
+          background: $teal;
         }
       }
+    }
+  }
+}
+
+//footer
+footer {
+  background: $black;
+  height: 80px;
+  .inner {
+    padding: 0 120px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .socials {
+      a {
+        margin: 0 8px;
+      }
+    }
+    span {
+      color: $white;
     }
   }
 }

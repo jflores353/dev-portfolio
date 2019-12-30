@@ -13,6 +13,20 @@ const About = () => {
           }
         }
       }
+      dctf: file(relativePath: { eq: "dream.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      aca: file(relativePath: { eq: "aca.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -22,21 +36,52 @@ const About = () => {
           <div className="content">
             <h3>A little about me...</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Facilisis gravida neque convallis a cras semper auctor. Quisque
-              sagittis purus sit amet volutpat consequat. Mattis ullamcorper
-              velit sed ullamcorper morbi tincidunt ornare massa. Consequat id
-              porta nibh venenatis cras sed felis eget velit. Velit ut tortor
-              pretium viverra suspendisse potenti. Tellus pellentesque eu
-              tincidunt tortor aliquam nulla facilisi cras fermentum. Risus
-              ultricies tristique nulla aliquet enim tortor. Eu nisl nunc mi
-              ipsum faucibus vitae aliquet nec. Faucibus vitae aliquet nec
-              ullamcorper sit. Ut etiam sit amet nisl purus in mollis.
+              Currently I am tutoring students at Austin Coding Academy that are
+              on the same JavaScript track that I completed in the Spring of
+              2019. I enjoy studying and keeping up with the new trends in the
+              development world by creating small projects with what I learn.
+              <br />
+              <br />
+              You can catch me on the soccer field pretty much all year. I'm
+              inspired by all cultures through their cuisines and love to
+              adventure in cooking at home with new recipes and ingredients.
+              Also, as you know I'm from Central Texas so of course I know my
+              way around a bbq smoker. I dabble a little into woodworking and
+              art as well.
+              <br />
+              <br />
+              My journey into the development world would not have been possible
+              without the support I have received from the{" "}
+              <a href="https://www.dctf-austin.org/single-post/2019/07/30/Gabe-Flores-Dream-Achiever">
+                Dream Come True Foundation.
+              </a>
+              After submitting an application along with sharing a written story
+              of my life thus far and interviewing before the foundation's board
+              members, I was granted full scholarship to attend{" "}
+              <a href="https://austincodingacademy.com/">
+                Austin Coding Academy
+              </a>
+              . I will be forever grateful!
             </p>
+            <div className="logos">
+              <div className="dctf-image">
+                <a href="https://www.dctf-austin.org/single-post/2019/07/30/Gabe-Flores-Dream-Achiever">
+                  <Img fluid={data.dctf.childImageSharp.fluid} />
+                </a>
+              </div>
+              <div className="aca-image">
+                <a href="https://austincodingacademy.com/">
+                  <Img fluid={data.aca.childImageSharp.fluid} />
+                </a>
+              </div>
+            </div>
+
             <div className="btn-row">
               <Link to="/">Back to the top</Link>
             </div>
+          </div>
+          <div className="bio-image">
+            <Img fluid={data.headshot.childImageSharp.fluid} />
           </div>
         </div>
       </div>

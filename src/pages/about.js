@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-// import Img from "gatsby-image"
+import Img from "gatsby-image"
 
 import Header from "../components/header"
 
@@ -38,6 +38,9 @@ const AboutPage = () => {
                 ullamcorper sit. Ut etiam sit amet nisl purus in mollis.
               </p>
             </div>
+          </div>
+          <div className="bio-image">
+            <Img fluid={data.headshot.childImageSharp.fluid} />
           </div>
         </div>
       </div>
