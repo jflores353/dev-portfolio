@@ -6,10 +6,7 @@ export default function Contact() {
       <section id="four">
         <div class="container">
           <h3>Send me an Email :</h3>
-          <p>
-            Please contact me if you would like to work on a project together,
-            or just want to chat.
-          </p>
+
           <form method="post" action="POST" data-netlify="true">
             <div class="row gtr-uniform">
               <div class="col-6 col-12-xsmall">
