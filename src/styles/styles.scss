@@ -48,7 +48,7 @@ header {
     height: 80px;
     .logo {
       a {
-        font-weight: 700;
+        font-weight: 600;
         text-decoration: none;
         letter-spacing: 1.5px;
         color: $black;
@@ -133,7 +133,7 @@ header {
           width: 40%;
         }
         h3 {
-          font-weight: 700;
+          font-weight: 600;
           text-transform: uppercase;
           font-size: 1.8rem;
           letter-spacing: 1.5px;
@@ -189,7 +189,7 @@ header {
   .inner-project {
     .heading {
       h2 {
-        font-weight: 700;
+        font-weight: 600;
         text-transform: uppercase;
         font-size: 1.8rem;
         letter-spacing: 1.5px;
@@ -220,6 +220,8 @@ header {
         .side-image {
           width: 40%;
           padding: 0 20px;
+          align-self: center;
+          flex-grow: 1;
           @media (max-width: 1440px) {
             width: 208px;
           }
@@ -249,6 +251,35 @@ header {
           background: $teal;
         }
       }
+    }
+  }
+}
+
+//Contact form
+.contact {
+  background: $off-white;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  h1 {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    color: $black;
+    text-transform: uppercase;
+    padding-right: 2rem;
+  }
+  input {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 300;
+  }
+  p {
+    button {
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 300;
     }
   }
 }

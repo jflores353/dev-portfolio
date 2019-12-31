@@ -55,13 +55,15 @@ const About = () => {
               <a href="https://www.dctf-austin.org/single-post/2019/07/30/Gabe-Flores-Dream-Achiever">
                 Dream Come True Foundation.
               </a>
-              After submitting an application along with sharing a written story
-              of my life thus far and interviewing before the foundation's board
-              members, I was granted full scholarship to attend{" "}
+              &nbsp; After submitting an application along with sharing a
+              written story of my life thus far and interviewing before the
+              foundation's board members, I was granted full scholarship to
+              attend{" "}
               <a href="https://austincodingacademy.com/">
                 Austin Coding Academy
               </a>
-              . I will be forever grateful!
+              . &nbsp; I completed their FullStack JavaScript track in April
+              2019. I will be forever grateful!
             </p>
             <div className="logos">
               <div className="dctf-image">
