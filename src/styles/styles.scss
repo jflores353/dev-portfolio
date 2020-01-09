@@ -108,15 +108,15 @@ header {
       }
     }
   }
-  .scroll {
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 1.5px;
-    color: $black;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 48px;
-  }
+  // .scroll {
+  //   font-weight: 700;
+  //   font-size: 1rem;
+  //   letter-spacing: 1.5px;
+  //   color: $black;
+  //   text-transform: uppercase;
+  //   position: absolute;
+  //   bottom: 48px;
+  // }
 }
 
 //About
@@ -299,6 +299,10 @@ header {
   }
   textarea {
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 300;
+    margin: 40px 0 72px;
   }
   p {
     button {
