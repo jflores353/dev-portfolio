@@ -22,6 +22,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-scroll": "^1.7.15",
     "smooth-scrollbar": "^8.5.1"
   },
   "devDependencies": {

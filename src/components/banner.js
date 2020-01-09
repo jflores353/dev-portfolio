@@ -15,7 +15,7 @@ const Banner = () => {
     }
   `)
   return (
-    <div className="banner">
+    <div className="banner" id="home">
       <div className="container">
         <div className="row">
           <div className="main-text">Gabe Flores</div>

@@ -1,9 +1,8 @@
 import React from "react"
 
 // Socials
-import twitter from "../images/twitter.png"
-import instagram from "../images/instagram.png"
-import linkedin from "../images/linkedin.png"
+import github from "../images/github-large.png"
+import linkedin from "../images/linkedin-large.png"
 
 const Footer = () => {
   return (
@@ -11,13 +10,10 @@ const Footer = () => {
       <div className="inner">
         <span>© 2019 Gabe Flores</span>
         <div className="socials">
-          <a href="https://twitter.com/CoconutMexican">
-            <img src={twitter} alt="Twitter" />
+          <a href="https://github.com/jflores353">
+            <img src={github} alt="Github" />
           </a>
-          <a href="https://www.instagram.com/joegabe.flores/?hl=en">
-            <img src={instagram} alt="Instagram" />
-          </a>
-          <a href="https://www.instagram.com/joegabe.flores/?hl=en">
+          <a href="https://www.linkedin.com/in/gabe-flores21/">
             <img src={linkedin} alt="Linkedin" />
           </a>
         </div>

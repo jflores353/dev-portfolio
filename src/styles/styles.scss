@@ -52,6 +52,7 @@ header {
         text-decoration: none;
         letter-spacing: 1.5px;
         color: $black;
+        cursor: pointer;
       }
     }
     .navigation {
@@ -62,6 +63,7 @@ header {
           color: $black;
           letter-spacing: 1.75px;
           font-size: 1rem;
+          cursor: pointer;
           &:last-child {
             margin-right: 0px;
           }
@@ -166,6 +168,7 @@ header {
             color: $black;
             text-transform: uppercase;
             text-decoration: none;
+            cursor: pointer;
           }
         }
       }
@@ -174,6 +177,7 @@ header {
       width: 30%;
       margin-right: 35px;
       right: 168px;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
       @media (max-width: 1440px) {
         width: 436px;
       }
@@ -188,6 +192,7 @@ header {
   background: $white;
   .inner-project {
     .heading {
+      padding-bottom: 2rem;
       h2 {
         font-weight: 600;
         text-transform: uppercase;
@@ -222,6 +227,7 @@ header {
           padding: 0 20px;
           align-self: center;
           flex-grow: 1;
+          // box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
           @media (max-width: 1440px) {
             width: 208px;
           }
@@ -245,12 +251,26 @@ header {
         &.top {
           flex-direction: row-reverse;
           background: $teal;
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
         }
         &.bottom {
           flex-direction: row-reverse;
           background: $teal;
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
         }
       }
+    }
+  }
+  .btn-row {
+    padding-top: 1rem;
+    a {
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      color: $black;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
     }
   }
 }
@@ -268,18 +288,25 @@ header {
     letter-spacing: 1.5px;
     color: $black;
     text-transform: uppercase;
-    padding-right: 2rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
   }
   input {
     font-size: 1rem;
     line-height: 1rem;
     font-weight: 300;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+  }
+  textarea {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
   }
   p {
     button {
       font-size: 1rem;
       line-height: 1rem;
       font-weight: 300;
+      cursor: pointer;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
     }
   }
 }

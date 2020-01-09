@@ -30,7 +30,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="contact">
+    <div className="contact" id="email-form">
       <h1>Contact</h1>
       <form
         name="contact"

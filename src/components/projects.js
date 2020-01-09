@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { Link } from "react-scroll"
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -15,7 +16,7 @@ const Projects = () => {
     }
   `)
   return (
-    <div className="outter-project">
+    <div className="outter-project" id="projects">
       <div className="container">
         <div className="inner-project">
           <div className="heading">
@@ -73,6 +74,18 @@ const Projects = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="btn-row">
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Back To The Top
+          </Link>
         </div>
       </div>
     </div>

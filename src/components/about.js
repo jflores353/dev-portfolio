@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -30,7 +30,7 @@ const About = () => {
     }
   `)
   return (
-    <div className="about-bio">
+    <div className="about-bio" id="about">
       <div className="container">
         <div className="inner-bio">
           <div className="content">
@@ -79,7 +79,16 @@ const About = () => {
             </div>
 
             <div className="btn-row">
-              <Link to="/">Back to the top</Link>
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                Back to the top
+              </Link>
             </div>
           </div>
           <div className="bio-image">
