@@ -6,9 +6,9 @@ import { Link } from "react-scroll"
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      headshot: file(relativePath: { eq: "headshot.jpg" }) {
+      headshot: file(relativePath: { eq: "selfie.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }

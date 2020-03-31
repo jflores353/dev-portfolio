@@ -5,9 +5,9 @@ import Img from "gatsby-image"
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query {
-      headshot: file(relativePath: { eq: "headshot.jpg" }) {
+      headshot: file(relativePath: { eq: "360.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
           }
         }

@@ -8,7 +8,15 @@ const Projects = () => {
     query {
       movie: file(relativePath: { eq: "movie.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 650) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      trivia: file(relativePath: { eq: "trivia.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 650) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -43,7 +51,7 @@ const Projects = () => {
             </div>
             <div className="project mid">
               <div className="project-title">
-                <h3>Project 2</h3>
+                <h3>React Trivia Game</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -54,7 +62,9 @@ const Projects = () => {
                 </p>
               </div>
               <div className="side-image mid">
-                <Img fluid={data.movie.childImageSharp.fluid} />
+                <a href="https://trivia-top-ten.netlify.com/">
+                  <Img fluid={data.trivia.childImageSharp.fluid} />
+                </a>
               </div>
             </div>
             <div className="project bottom">

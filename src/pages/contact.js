@@ -1,8 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby-link"
 
-import Header from "../components/header"
-
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -33,8 +31,6 @@ export default function Contact() {
 
   return (
     <div className="contact">
-      <Header />
-
       <h1>Contact</h1>
       <form
         name="contact"
