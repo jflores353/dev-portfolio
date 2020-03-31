@@ -13,12 +13,14 @@ body {
   font-size: 16px;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .container {
   width: 1640px;
   min-width: 1640px;
   margin: 0 auto;
+  padding: 0;
   @media (max-width: 1440px) {
     width: 1280px;
     min-width: 1280px;
@@ -27,7 +29,7 @@ body {
     width: 976px;
     min-width: 976px;
   }
-  @media (max-width: 976x) {
+  @media (max-width: 976px) {
     width: 768px;
     min-width: 768px;
   }
@@ -46,6 +48,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 80px;
+
     .logo {
       a {
         font-weight: 600;
@@ -53,6 +56,7 @@ header {
         letter-spacing: 1.5px;
         color: $black;
         cursor: pointer;
+        padding-left: 4rem;
       }
     }
     .navigation {
@@ -65,10 +69,16 @@ header {
           font-size: 1rem;
           cursor: pointer;
           &:last-child {
-            margin-right: 0px;
+            padding-right: 4rem;
+          }
+          @media (max-width: 976px) {
           }
         }
       }
+    }
+    @media (max-width: 976px) {
+      width: 100%;
+      min-width: 768px;
     }
   }
 }
@@ -89,7 +99,8 @@ header {
       color: $white;
       position: absolute;
       width: 100%;
-      left: 0;
+      // left: 1;
+      margin-left: 1rem;
       top: 35%;
       transform: translateY(-50%);
       text-align: center;
@@ -100,35 +111,26 @@ header {
         letter-spacing: 36px;
       }
       @media (max-width: 976px) {
-        font-size: 3rem;
+        font-size: 5rem;
         letter-spacing: 25px;
         width: 100%;
       }
     }
     .main-image {
-      width: 55%;
+      width: 50%;
       margin: 0 auto;
       @media (max-width: 1440px) {
         width: 55%;
       }
       @media (max-width: 1280px) {
-        width: 55%;
+        width: 80%;
         min-width: 30%;
       }
-      @media (max-width: 976x) {
+      @media (max-width: 900px) {
         width: 100%;
       }
     }
   }
-  // .scroll {
-  //   font-weight: 700;
-  //   font-size: 1rem;
-  //   letter-spacing: 1.5px;
-  //   color: $black;
-  //   text-transform: uppercase;
-  //   position: absolute;
-  //   bottom: 48px;
-  // }
 }
 
 //About
@@ -137,18 +139,23 @@ header {
   background: $off-white;
   position: relative;
   .container {
+    @media (max-width: 976x) {
+      display: flex;
+      flex-direction: column;
+    }
+    width: 100%;
     .inner-bio {
       display: flex;
       justify-content: space-around;
       align-items: center;
 
       .content {
-        width: 50%;
+        width: 60%;
         @media (max-width: 1440px) {
           width: 40%;
         }
         @media (max-width: 976x) {
-          flex-direction: column;
+          width: 100%;
         }
       }
       h3 {
@@ -191,14 +198,14 @@ header {
     }
   }
   .bio-image {
-    width: 30%;
+    width: 20%;
     margin-bottom: 200px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
     @media (max-width: 1440px) {
-      width: 436px;
+      width: 30%;
     }
     @media (max-width: 976x) {
-      width: 100%;
+      width: 20%;
     }
   }
 }
@@ -211,21 +218,22 @@ header {
   .inner-project {
     .heading {
       padding-bottom: 2rem;
+      padding-left: 3rem;
       h2 {
         font-weight: 600;
         text-transform: uppercase;
         font-size: 1.8rem;
         letter-spacing: 1.5px;
-        margin: 0;
       }
     }
     .project-list {
       .project {
         display: flex;
+        padding: 3rem 0;
         justify-content: space-between;
-        padding: 35px 0;
         .project-title {
           width: 55%;
+          margin-left: 10rem;
           h3 {
             font-weight: 700;
             font-size: 1rem;
@@ -238,16 +246,24 @@ header {
             line-height: 2rem;
             font-weight: 300;
             margin: 40px 0 72px;
+            width: 80%;
           }
         }
         .side-image {
-          width: 40%;
-          padding: 0 20px;
+          width: 20%;
+          padding: 0 4rem;
           align-self: center;
+
           flex-grow: 1;
-          // box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+
           @media (max-width: 1440px) {
-            width: 208px;
+            width: 30%;
+          }
+          @media (max-width: 1440px) {
+            width: 30%;
+          }
+          @media (max-width: 976x) {
+            width: 30%;
           }
 
           &.top {
@@ -281,6 +297,7 @@ header {
   }
   .btn-row {
     padding-top: 1rem;
+    padding-left: 3rem;
     a {
       font-weight: 700;
       font-size: 1rem;
@@ -341,6 +358,7 @@ header {
 footer {
   background: $black;
   height: 80px;
+  width: 100%;
   .inner {
     padding: 0 120px;
     height: 80px;
@@ -354,6 +372,12 @@ footer {
     }
     span {
       color: $white;
+    }
+  }
+  @media (max-width: 976x) {
+    width: 100%px;
+    .inner {
+      width: 100%;
     }
   }
 }

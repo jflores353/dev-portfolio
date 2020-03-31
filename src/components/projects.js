@@ -33,14 +33,14 @@ const Projects = () => {
           <div className="project-list">
             <div className="project top">
               <div className="project-title">
-                <h3>React Movie App</h3>
+                <h3>React Movie Database</h3>
+
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Facilisis gravida neque convallis a cras semper auctor.
-                  Quisque sagittis purus sit amet volutpat consequat. Mattis
-                  ullamcorper velit sed ullamcorper morbi tincidunt ornare
-                  massa.
+                  A movie database application built with ReactJS that fetches
+                  films from themoviedb's API. The user interface for this
+                  application uses complex animations that enhance the visual
+                  experience when transitioning to the subpage for each
+                  individual movie's detail.
                 </p>
               </div>
               <div className="side-image top">
@@ -52,13 +52,13 @@ const Projects = () => {
             <div className="project mid">
               <div className="project-title">
                 <h3>React Trivia Game</h3>
+
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Facilisis gravida neque convallis a cras semper auctor.
-                  Quisque sagittis purus sit amet volutpat consequat. Mattis
-                  ullamcorper velit sed ullamcorper morbi tincidunt ornare
-                  massa.
+                  A fullstack quiz application built with ReactJS on the
+                  frontend and Google's Firebase for the backend. Uses the
+                  OpenTrivia Database API to retrieve questions and then allows
+                  users to store their scores at the end of each game into
+                  Firebase's storage.
                 </p>
               </div>
               <div className="side-image mid">
@@ -70,6 +70,7 @@ const Projects = () => {
             <div className="project bottom">
               <div className="project-title">
                 <h3>Project 3</h3>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
