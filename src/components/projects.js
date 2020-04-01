@@ -21,6 +21,14 @@ const Projects = () => {
           }
         }
       }
+
+      ecommerce: file(relativePath: { eq: "ecommerce.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 650) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -40,7 +48,9 @@ const Projects = () => {
                   films from themoviedb's API. The user interface for this
                   application uses complex animations that enhance the visual
                   experience when transitioning to the subpage for each
-                  individual movie's detail.
+                  individual movie's detail. Once a movie is selected, the url
+                  is flexible and you can simply change the last digit to
+                  randomly load another movie. Try it out.
                 </p>
               </div>
               <div className="side-image top">
@@ -58,7 +68,8 @@ const Projects = () => {
                   frontend and Google's Firebase for the backend. Uses the
                   OpenTrivia Database API to retrieve questions and then allows
                   users to store their scores at the end of each game into
-                  Firebase's storage.
+                  Firebase's storage. Play a quick round and try to make it to
+                  the top of the High Scores.
                 </p>
               </div>
               <div className="side-image mid">
@@ -69,19 +80,22 @@ const Projects = () => {
             </div>
             <div className="project bottom">
               <div className="project-title">
-                <h3>Project 3</h3>
+                <h3>Gatsby-Shopify Ecommerce</h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Facilisis gravida neque convallis a cras semper auctor.
-                  Quisque sagittis purus sit amet volutpat consequat. Mattis
-                  ullamcorper velit sed ullamcorper morbi tincidunt ornare
-                  massa.
+                  An Ecommerce web app built with the blazing fast GatsbyJS
+                  framework on the frontend and Shopify's developer API. Add an
+                  item to the cart, proceed to checkout and you will be sent to
+                  Shopify's checkout page. You can process a mock order using
+                  any customer info and just make sure to place only a "1" for
+                  the credit card number. Even add coupon code "Gabe" for a
+                  small discount!
                 </p>
               </div>
               <div className="side-image bottom">
-                <Img fluid={data.movie.childImageSharp.fluid} />
+                <a href="/">
+                  <Img fluid={data.ecommerce.childImageSharp.fluid} />
+                </a>
               </div>
             </div>
           </div>
