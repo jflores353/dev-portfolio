@@ -93,7 +93,7 @@ const Projects = () => {
                 </p>
               </div>
               <div className="side-image bottom">
-                <a href="/">
+                <a href="https://gatsby-shopify-ecommerce.netlify.com">
                   <Img fluid={data.ecommerce.childImageSharp.fluid} />
                 </a>
               </div>
