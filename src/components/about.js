@@ -36,18 +36,19 @@ const About = () => {
           <div className="content">
             <h3>A little about me...</h3>
             <p>
-              Currently I am tutoring students at Austin Coding Academy that are
-              on the same JavaScript track that I completed in the Spring of
-              2019. I enjoy studying and keeping up with the new trends in the
+              I am a full stack Developer from Austin, TX. I have spent the last
+              year tutoring students at Austin Coding Academy that are on the
+              same JavaScript track that I completed in the Spring of 2019. I
+              enjoy studying and keeping up with the new trends in the
               development world by creating small projects with what I learn.
               <br />
               <br />
-              You can catch me on the soccer field pretty much all year. I'm
-              inspired by all cultures through their cuisines and love to
-              adventure in cooking at home with new recipes and ingredients.
-              Also, as you know I'm from Central Texas so of course I know my
-              way around a bbq smoker. I dabble a little into woodworking and
-              art as well.
+              I love sports and currently play on a few soccer teams as well as
+              referee. I'm inspired by all cultures through their cuisines and
+              love to adventure in cooking at home with new recipes and
+              ingredients. Also, as you know I'm from Central Texas so of course
+              I know my way around a bbq smoker. I dabble a little into
+              woodworking and art as well.
               <br />
               <br />
               My journey into the development world would not have been possible
@@ -63,7 +64,7 @@ const About = () => {
                 Austin Coding Academy
               </a>
               . &nbsp; I completed their FullStack JavaScript track in April
-              2019. I will be forever grateful!
+              2019. The DCTF group will always be part of my family.
             </p>
             <div className="logos">
               <div className="dctf-image">
