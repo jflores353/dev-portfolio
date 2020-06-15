@@ -48,9 +48,8 @@ const Projects = () => {
                   films from themoviedb's API. The user interface for this
                   application uses complex animations that enhance the visual
                   experience when transitioning to the subpage for each
-                  individual movie's detail. Once a movie is selected, the url
-                  is flexible and you can simply change the last digit to
-                  randomly load another movie. Try it out.
+                  individual movie's detail. Take a look and browse through the
+                  list of current films.
                 </p>
               </div>
               <div className="side-image top">

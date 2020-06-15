@@ -135,28 +135,18 @@ header {
 
 //About
 .about-bio {
+  display: grid;
   padding: 100px 0 50px 0;
   background: $off-white;
   position: relative;
   .container {
-    @media (max-width: 976x) {
-      display: flex;
-      flex-direction: column;
-    }
     width: 100%;
     .inner-bio {
       display: flex;
       justify-content: space-around;
       align-items: center;
-
       .content {
         width: 60%;
-        @media (max-width: 1440px) {
-          width: 40%;
-        }
-        @media (max-width: 976x) {
-          width: 100%;
-        }
       }
       h3 {
         font-weight: 600;
@@ -206,6 +196,14 @@ header {
     }
     @media (max-width: 976x) {
       width: 20%;
+    }
+  }
+}
+.about-bio {
+  .container {
+    @media (max-width: 976x) {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
